@@ -18,8 +18,8 @@ const boardStyle: React.CSSProperties = {
   boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.5)"
 };
 
-const darkSquareColor: string = "#ab5e3a";
-const lightSquareColor: string = "#ffddba";
+const darkSquareColor: string = "#3f6336";
+const lightSquareColor: string = "#e1fcd9";
 const highlightedSquareColor: string = "#fff763";
 
 export const BoardView: React.FunctionComponent<BoardProps> = props => {
