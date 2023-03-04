@@ -27,10 +27,7 @@ export const GameEndedModal: React.FunctionComponent<GameEndedModalProps> = prop
       </Modal.Header>
       <Modal.Body>{message}</Modal.Body>
       <Modal.Footer>
-        <Button
-          variant="primary"
-          onClick={props.onHide}
-        >
+        <Button variant="dark" onClick={props.onHide}>
           Close
         </Button>
       </Modal.Footer>

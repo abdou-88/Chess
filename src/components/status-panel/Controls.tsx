@@ -13,16 +13,16 @@ const panelStyle: React.CSSProperties = {
   padding: "10px"
 };
 
-const buttonStyle: React.CSSProperties = {
-  width: "40%",
-  boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.5)"
-};
+
 
 export const Controls: React.FunctionComponent<StatusPanelProps> = (props) => {
   return (
     <div style={panelStyle}>
-      <Button style={buttonStyle} onClick={props.onUndo}>Undo</Button>
-      <Button style={buttonStyle} onClick={props.onRestart}>Restart</Button>
+      <Button variant="dark" onClick={props.onUndo}>Undo</Button>
+
+      <Button variant="dark" onClick={props.onRestart}>
+        Restart
+      </Button>
     </div>
   );
 };

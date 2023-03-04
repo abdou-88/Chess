@@ -9,7 +9,7 @@ const centeredStyle: React.CSSProperties = {
   transform: "translate(-50%, -50%)",
 }
 
-export const Centered: React.FC<{}> = (props) => {
+export const Centered: React.FC<{}> = (props:any) => {
   return (
     <div style={centeredStyle}>
       {props.children}
