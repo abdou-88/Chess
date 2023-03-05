@@ -31,7 +31,7 @@ export const HistoryView: React.FunctionComponent<HistoryViewProps> = props => {
   let result = new Array<ReactNode>();
   for (let i = 0; i < props.history.length; i += 2) {
     result.push(
-      <Row>
+      <Row key= {i}>
         <Col xs={2}>{i / 2 + 1}</Col>
         <Col>{moveLabel(props.history[i])}</Col>
         <Col>

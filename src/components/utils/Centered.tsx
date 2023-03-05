@@ -9,10 +9,9 @@ const centeredStyle: React.CSSProperties = {
   transform: "translate(-50%, -50%)",
 }
 
-export const Centered: React.FC<{}> = (props:any) => {
-  return (
-    <div style={centeredStyle}>
-      {props.children}
-    </div>
-  );
+interface CenteredProps  {
+  children: React.ReactNode; 
+};
+export const Centered: React.FC<CenteredProps> = (props: CenteredProps) => {
+  return <div style={centeredStyle}>{props.children}</div>;
 };

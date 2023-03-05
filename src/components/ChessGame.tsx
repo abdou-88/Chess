@@ -24,6 +24,7 @@ const gameStyle: React.CSSProperties = {
   overflow: "hidden",
 };
 
+
 export class ChessGame extends React.Component<ChessGameProps, ChessGameState> {
   constructor(p: ChessGameProps) {
     super(p);
@@ -33,6 +34,7 @@ export class ChessGame extends React.Component<ChessGameProps, ChessGameState> {
       gameResult: GameResult.Open
     };
   }
+  
 
   render() {
     let board = this.props.engine.getChessBoard();
