@@ -18,7 +18,7 @@ interface ChessGameState {
 }
 
 const gameStyle: React.CSSProperties = {
-  backgroundImage: "linear-gradient(-90deg, #3f6336, #ffffff, #000000)",
+  backgroundImage: "linear-gradient(-90deg, #3f6336, #ff88ff, #000000)",
   width: "100vw",
   height: "100vh",
   overflow: "hidden",
